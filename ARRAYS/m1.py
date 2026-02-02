@@ -38,7 +38,23 @@ for x in nums:
         sm=x
     elif x <ssm and x!=sm:
         ssm=x
-print(ssm)
+#print(ssm)
+
+#to check if an array is sorted
+
+arr=[7,10,12,13,15]
+def is_sorted(arr):
+    for i in range(1,len(arr)):
+        if arr[i] < arr[i-1]:
+            return False
+        curr=arr[i]
+    return True
+print(is_sorted(arr))
+
+
+
+
+
 
 
 
